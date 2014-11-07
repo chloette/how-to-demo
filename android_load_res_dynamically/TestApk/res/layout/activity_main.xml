@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView 
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher"
+        />
+    
+    <Button
+        android:id="@+id/getimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img"
+        android:text="获取图片" />
+
+	<Button
+	    android:id="@+id/getstr"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/getimg"
+	    android:layout_alignBottom="@+id/getimg"
+	    android:layout_marginLeft="14dp"
+	    android:layout_toRightOf="@+id/getimg"
+	    android:text="获取string" />
+
+	<Button
+	    android:id="@+id/getcolor"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/getimg"
+	    android:layout_toLeftOf="@+id/getstr"
+	    android:text="获取颜色" />
+
+	<Button
+	    android:id="@+id/getanim"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/getstr"
+	    android:layout_below="@+id/getstr"
+	    android:text="获取动画" />
+
+	<Button
+	    android:id="@+id/getlayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/getcolor"
+	    android:layout_toLeftOf="@+id/getstr"
+	    android:text="获取布局" />
+
+	<Button
+	    android:id="@+id/getdimens"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/getlayout"
+	    android:layout_alignBottom="@+id/getlayout"
+	    android:layout_alignRight="@+id/getanim"
+	    android:text="获取dimens" />
+
+	<TextView
+	    android:id="@+id/text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/getstr"
+	    android:layout_below="@+id/img"
+	    android:layout_marginRight="51dp"
+	    android:layout_marginTop="58dp"
+	    android:text="测试resapk" />
+
+</RelativeLayout>
